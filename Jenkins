@@ -1,0 +1,10 @@
+properties([pipelineTriggers([githubPush()])])
+node{
+    stage("clone"){
+        git"https://github.com/alina-nyka/DevOpsProject/tree/master.git"
+    }
+    stage("execute"){
+        bat "ls -l"
+        bat "python disk_resizer.py"
+    }
+}
