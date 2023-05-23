@@ -1,0 +1,10 @@
+for installing packages to project we are creating
+txt file with name requirements and writing down a list
+of our requirements that we need for a project.
+
+:> pip install -r requirements.txt
+
+for upgrade version:
+:>python -m pip install --upgrade pip
+
+:>pip install --upgrade awscli
